@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  New
+//
+//  Created by nattinessYang on 16/8/15.
+//  Copyright © 2016年 nattinessYang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "EfficientDefine.h"
+#import "MBProgressHUD+NJ.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIView+Extension.h"
+#import "EMSDK.h"
+
+#endif /* PrefixHeader_pch */

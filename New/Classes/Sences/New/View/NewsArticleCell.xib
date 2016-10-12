@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="NewsArticleCell">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="108.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOi-Pw-Iam">
+                        <rect key="frame" x="0.0" y="0.0" width="369" height="108.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息来源" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-6n-lca">
+                                <rect key="frame" x="138" y="87" width="44" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horizontal_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="9JI-VU-P7Z">
+                                <rect key="frame" x="8" y="105" width="353" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="WMb-c4-ctR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2A3-RI-7HH">
+                                <rect key="frame" x="8" y="8" width="122" height="92.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2A3-RI-7HH" secondAttribute="height" multiplier="33:25" id="SwM-GU-opC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲爱的爱上你从那天起甜蜜的很轻易亲爱的别任性你的眼睛再说我愿意" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-Gh-a6w" userLabel="Title Label">
+                                <rect key="frame" x="138" y="8" width="223" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr8-IL-T6s" userLabel="Type Label">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="100.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9JI-VU-P7Z" secondAttribute="trailing" constant="8" id="3xH-JL-45w"/>
+                            <constraint firstItem="ASv-6n-lca" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QL2-Gh-a6w" secondAttribute="bottom" id="8rF-SG-z84"/>
+                            <constraint firstItem="2A3-RI-7HH" firstAttribute="leading" secondItem="NOi-Pw-Iam" secondAttribute="leading" constant="8" id="964-Ku-mHJ"/>
+                            <constraint firstItem="ASv-6n-lca" firstAttribute="leading" secondItem="2A3-RI-7HH" secondAttribute="trailing" constant="8" id="9sR-rN-Ted"/>
+                            <constraint firstAttribute="bottom" secondItem="9JI-VU-P7Z" secondAttribute="bottom" constant="2" id="BsE-5B-9EY"/>
+                            <constraint firstItem="cr8-IL-T6s" firstAttribute="top" secondItem="NOi-Pw-Iam" secondAttribute="top" id="FoT-Uq-0Ev"/>
+                            <constraint firstAttribute="trailing" secondItem="QL2-Gh-a6w" secondAttribute="trailing" constant="8" id="Ll3-gd-vx4"/>
+                            <constraint firstItem="QL2-Gh-a6w" firstAttribute="top" secondItem="NOi-Pw-Iam" secondAttribute="top" constant="8" id="N6d-Ub-v9i"/>
+                            <constraint firstAttribute="bottom" secondItem="2A3-RI-7HH" secondAttribute="bottom" constant="8" id="Q4a-Zf-Qzx"/>
+                            <constraint firstItem="2A3-RI-7HH" firstAttribute="top" secondItem="NOi-Pw-Iam" secondAttribute="top" constant="8" id="QRa-Gp-lQm"/>
+                            <constraint firstItem="9JI-VU-P7Z" firstAttribute="top" secondItem="ASv-6n-lca" secondAttribute="bottom" constant="5" id="aWA-Qj-Lup"/>
+                            <constraint firstAttribute="trailing" secondItem="cr8-IL-T6s" secondAttribute="trailing" constant="8" id="fgJ-s6-DQY"/>
+                            <constraint firstItem="QL2-Gh-a6w" firstAttribute="leading" secondItem="2A3-RI-7HH" secondAttribute="trailing" constant="8" id="iSC-gj-4Nn"/>
+                            <constraint firstItem="9JI-VU-P7Z" firstAttribute="leading" secondItem="NOi-Pw-Iam" secondAttribute="leading" constant="8" id="pdu-LS-qfI"/>
+                            <constraint firstAttribute="bottom" secondItem="cr8-IL-T6s" secondAttribute="bottom" constant="8" id="rcr-9h-b2Z"/>
+                            <constraint firstItem="cr8-IL-T6s" firstAttribute="leading" secondItem="NOi-Pw-Iam" secondAttribute="leading" id="zYt-XT-AYD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NOi-Pw-Iam" secondAttribute="bottom" id="I2y-qT-te0"/>
+                    <constraint firstAttribute="trailing" secondItem="NOi-Pw-Iam" secondAttribute="trailing" id="WIM-ax-9fw"/>
+                    <constraint firstItem="NOi-Pw-Iam" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eVX-1N-qnT"/>
+                    <constraint firstItem="NOi-Pw-Iam" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eek-1C-dWi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftImageView" destination="2A3-RI-7HH" id="1BR-9L-23j"/>
+                <outlet property="sourceLabel" destination="ASv-6n-lca" id="TlV-Wv-TVr"/>
+                <outlet property="titleLabel" destination="QL2-Gh-a6w" id="PzE-vA-nOF"/>
+                <outlet property="typeLabel" destination="cr8-IL-T6s" id="f4Y-vL-a37"/>
+            </connections>
+            <point key="canvasLocation" x="272.5" y="234.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="horizontal_separator.png" width="447" height="1"/>
+    </resources>
+</document>

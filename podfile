@@ -1,0 +1,18 @@
+platform :ios, '8.0'
+target 'New' do
+pod 'Masonry'
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'FMDB'
+pod 'MJRefresh'
+pod 'SMPageControl', '~> 1.2'
+pod 'MBProgressHUD'
+pod 'AVOSCloud'
+pod 'FXBlurView'
+pod 'HyphenateSDK'
+pod 'MJExtension'
+pod 'SVProgressHUD'
+pod 'DKNightVersion'
+pod 'XMPPFramework'
+end
+
